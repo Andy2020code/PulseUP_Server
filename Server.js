@@ -13,7 +13,7 @@ const users = [
 
 // Route to handle first view
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + 'about.html');
+    res.sendFile(__dirname + '/about.html');
 });
 
 // Route to handle user login
