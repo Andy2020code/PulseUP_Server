@@ -12,7 +12,7 @@ const users = [
 ];
 
 // Route to handle first view
-app.get('/about', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + 'about.html');
 });
 
