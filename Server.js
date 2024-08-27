@@ -11,6 +11,11 @@ const users = [
     { username: 'Anderson', password: 'password123' }
 ];
 
+// Route to handle first view
+app.get('/about', (req, res) => {
+    res.sendFile(__dirname + 'about.html');
+});
+
 // Route to handle user login
 app.post('/login', async (req, res) => {
     const username = req.body.username; // Fixed typo: 'usernme' to 'username'
